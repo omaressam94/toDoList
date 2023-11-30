@@ -103,3 +103,8 @@ body{
 .task-stats .task-completed span{
     background: #03a9f4;
 }
+.swiper-slide img{
+    height: 100vh;
+    width: 100%;
+    object-fit: contain;
+}

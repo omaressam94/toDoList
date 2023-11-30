@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+<h1>hellow from our side </h1>
     <div class="todo-container">
         <div class="add-task">
             <input type="text">
@@ -32,6 +34,67 @@
     </div>
 
 
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="choce_watch1.png" alt=""></div>
+            <div class="swiper-slide"><img src="popular3.png" alt=""></div>
+            <div class="swiper-slide"><img src="popular4.png" alt=""></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            // slidesPerView: 1,
+            // spaceBetween: 10,
+            // // Responsive breakpoints
+            // breakpoints: {
+            //     // when window width is >= 320px
+            //     320: {
+            //         slidesPerView: 2,
+            //         spaceBetween: 20
+            //     },
+            //     // when window width is >= 480px
+            //     480: {
+            //         slidesPerView: 3,
+            //         spaceBetween: 30
+            //     },
+            //     // when window width is >= 640px
+            //     640: {
+            //         slidesPerView: 4,
+            //         spaceBetween: 40
+            //     }
+            // }
+        });
+    </script>
     <script src="main.js"></script>
 </body>
 
